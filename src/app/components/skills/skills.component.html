@@ -1,0 +1,116 @@
+<div class="skill-container row">
+
+  <div class="new-proyect">
+    <div class="row m-0">
+        <div class="col-12 text-center title">
+            <h2>Nuevo Proyecto</h2>
+            <hr>
+        </div>
+      
+        <div class="col-12 col-sm-6 col-lg-3 block" *ngFor="let workflow of workflows">
+          <div class="row m-0">
+            <i [class]="workflow.icon"></i>
+            <h2>{{workflow.title}}</h2>
+            <p>{{workflow.description}}</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+    <div class="col-12 progress-bar-container">
+
+        <div class="row">
+            <div class="col-12 title text-center">
+                <h2>Habilidades</h2>
+                <hr>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="row">
+            <div class="col-12 sub-title">
+                <h3>Lenguajes</h3>
+            </div>
+
+            <div class="col-md-3" *ngFor="let skill of skills">
+                <h3 class="progress-title">{{skill.code}}</h3>
+                <i *ngIf="skill.icon" [class]="skill.icon"></i>
+                <div class="progress">
+                    <div class="progress-bar" [ngStyle]="skill.style">
+                        <div class="progress-value">{{skill.style.width}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 line">
+        <hr>
+        </div>
+
+        <!-- CMS -->
+        <div class="row">
+            <div class="col-12 sub-title">
+                <h3>Content Management System (CMS)</h3>
+            </div>
+
+            <div class="col-md-3" *ngFor="let cms of cmsList">
+                <h3 class="progress-title">{{cms.code}}</h3>
+                <i *ngIf="cms.icon" [class]="cms.icon"></i>
+                <div class="progress">
+                    <div class="progress-bar" [ngStyle]="cms.style">
+                        <div class="progress-value">{{cms.style.width}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 line">
+        <hr>
+        </div>
+
+        <!-- Other Skills -->
+        <div class="row">
+            <div class="col-12 sub-title">
+                <h3>Otras Habilidades</h3>
+            </div>
+
+            <div class="col-md-3" *ngFor="let skill of otherSkills">
+                <h3 class="progress-title">{{skill.code}}</h3>
+                <i *ngIf="skill.icon" [class]="skill.icon"></i>
+                <div class="progress">
+                    <div class="progress-bar" [ngStyle]="skill.style">
+                        <div class="progress-value">{{skill.style.width}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 line">
+            <hr>
+        </div>
+
+        <!-- Systems management -->
+        <div class="row">
+            <div class="col-12 sub-title">
+                <h3>Administracion de Sistemas</h3>
+            </div>
+
+            <div class="col-md-3" *ngFor="let skill of systemsManagement">
+                <h3 class="progress-title">{{skill.code}}</h3>
+                <i *ngIf="skill.icon" [class]="skill.icon"></i>
+                <div class="progress">
+                    <div class="progress-bar" [ngStyle]="skill.style">
+                        <div class="progress-value">{{skill.style.width}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+

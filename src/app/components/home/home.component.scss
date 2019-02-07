@@ -1,0 +1,13 @@
+@import "~variables.scss";
+
+.separation {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.projects-section {
+    border: 1px solid $boder-basic;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+    padding-top: 15px;
+}

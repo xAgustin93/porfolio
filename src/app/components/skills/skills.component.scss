@@ -1,0 +1,132 @@
+@import "~variables.scss";
+
+.skill-container {
+
+    .new-proyect {
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.05);
+        border: 1px solid $boder-basic;
+
+        .title {
+            padding: 20px 0 20px 0;
+        }
+        .block {
+            padding-bottom: 20px;
+            i {
+                font-size: 30px;
+                color: $primary-color;
+            }
+    
+            h2 {
+                font-size: 20px;
+                margin-left: 15px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+
+    .progress-bar-container {
+        border: 1px solid $boder-basic;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+        margin-top: 80px;
+
+        .title {
+            padding: 20px 0 20px 0;
+        }
+        .sub-title {
+            margin-bottom: 25px;
+
+            &:after {
+                background: $primary-color;
+                border-radius: 15px 0 30px 15px;
+                content: '';
+                display: block;
+                height: 15px;
+                width: 40px;
+                margin-top: 10px;
+            }
+        }
+
+        .progress-title{
+            font-size: 16px;
+            font-weight: 700;
+            color: #333;
+            margin: 0 0 5px;
+        }
+        i {
+            position: absolute;
+            top: 0;
+            right: 15px;;
+        }
+        .progress{
+            height: 20px;
+            background: #333;
+            border-radius: 0;
+            box-shadow: none;
+            margin-bottom: 30px;
+            overflow: visible;
+            border-radius: 15px 0 30px 15px;
+        
+            .progress-bar{
+                position: relative;
+                -webkit-animation: animate-positive 4s;
+                animation: animate-positive 4s;
+        
+                &:after{
+                    content: "";
+                    display: inline-block;
+                    width: 11px;
+                    background: #fff;
+                    position: absolute;
+                    top: -10px;
+                    bottom: -10px;
+                    right: -6px;
+                    z-index: 1;
+                    -webkit-transform: rotate(35deg);
+                    transform: rotate(35deg);
+                }
+            }
+        
+            .progress-value{
+                display: block;
+                font-size: 13px;
+                left: 5px;
+                font-weight: 600;
+                color: #fff;
+                position: absolute;
+            }
+        }
+        
+        @-webkit-keyframes animate-positive{
+            0%{ width: 0; }
+        }
+        @keyframes animate-positive {
+            0%{ width: 0; }
+        }
+    }
+
+}
+@media (max-width: 576px) {
+    .skill-container {
+        padding: 0 10px 0 10px;
+        .block {
+            .info {
+                border-bottom: 1px solid $boder-basic;
+                margin-bottom: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+                h2 {
+                    text-align: center;
+                    padding-top: 20px;
+                }
+            }
+        }
+    
+    }
+}
+
+
+
+
