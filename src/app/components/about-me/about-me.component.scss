@@ -99,6 +99,9 @@
         a.linkedin:hover {
             color: $linkedin;
         }
+        a.web:hover {
+            color: $web;
+        }
     }
 
     .link-block-mobile {
@@ -134,6 +137,9 @@
                 }
                 a.linkedin {
                     color: $linkedin;
+                }
+                a.web {
+                    color: $web;
                 }
             }
         }

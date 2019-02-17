@@ -48,6 +48,11 @@ export class AboutMeComponent {
     'show-delay': 500,
     'tooltip-class': 'tooltip-about-me'
   }
+  web = {
+    'placement': 'left',
+    'show-delay': 500,
+    'tooltip-class': 'tooltip-about-me'
+  }
 
   
 
