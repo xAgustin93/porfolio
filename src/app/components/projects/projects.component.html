@@ -1,6 +1,7 @@
 <div class="controlls-container col-12">
   <div class="row">
       <div class="btn-filter filter-active" data-filter="all"> Todos </div>
+      <div class="btn-filter" data-filter="course"> Cursos </div>
       <div class="btn-filter" data-filter="e-commerce"> E-Commerce </div>
       <div class="btn-filter" data-filter="web"> Web </div>
   </div>
@@ -8,13 +9,15 @@
 
 <div class="projects-container col-12">
     <div class="row">
-      <div *ngFor="let project of projects" class="col-4 filtr-item text-center project" [attr.data-category]="project.type" data-sort="value">
+      <div *ngFor="let project of projects" class="col-6 col-sm-4 filtr-item text-center project" [attr.data-category]="project.type" data-sort="value">
         <img class="img-fluid img-project" [src]="project.img" [alt]="project.name">
         <div class="block-hover">
           <p>{{project.name}}</p>
-          <button>
-              <a [href]="project.url" target="_blank">Visitar Web</a>
-          </button>
+            <a [href]="project.url" target="_blank">
+              <button>
+                  Visitar Web
+              </button>
+            </a>
         </div>
       </div>
     </div>

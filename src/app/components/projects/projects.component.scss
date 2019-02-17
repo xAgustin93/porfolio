@@ -44,10 +44,6 @@
 
 }
 
-
-
-
-
 .projects-container {
     margin-top: 40px;
 
@@ -59,6 +55,7 @@
             
             .block-hover {
                 display: grid;
+                padding: 20px;
             }
         }
 
@@ -122,4 +119,12 @@
 
 .btn-filter {
     cursor: pointer;
+}
+
+
+
+@media (max-width: 575.98px) {
+    .filter-active:after, .filter-active:before {
+        display: none;
+    }
 }

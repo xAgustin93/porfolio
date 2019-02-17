@@ -38,7 +38,7 @@ export class ProjectsComponent implements OnInit {
     {
       "type" : "web",
       "name" : "MrkConsultancy",
-      "url" : "https://www.mrkconsultancy.com/",
+      "url" : "http://www.mrkconsultancy.com/",
       "img" : "assets/img/proyects/web/mrkconsultancy.png"
     },
     {
@@ -52,6 +52,12 @@ export class ProjectsComponent implements OnInit {
       "name" : "TotalTalentHR",
       "url" : "https://www.totaltalenthr.com/",
       "img" : "assets/img/proyects/web/totaltalenthr.png"
+    },
+    {
+      "type" : "course",
+      "name" : "WordPress — ¡Crea tu web Profesional de 0 a Experto + Shop!",
+      "url" : "https://www.udemy.com/crea-tu-web-wordpress-profesional-de-cero-a-experto-con-tienda/",
+      "img" : "assets/img/proyects/course/crea-tu-web-wordpress-profesional-de-cero-a-experto-con-tienda.png"
     }
   ]
 
@@ -73,11 +79,6 @@ export class ProjectsComponent implements OnInit {
           $('.controlls-container .btn-filter').on('click', function(){
             $('.controlls-container .btn-filter').removeClass('filter-active');
             $(this).addClass('filter-active');
-          });
-
-          $('.projects-container .project').on('mouseover', function(){
-            console.log('hoverrr');
-            
           });
       });
     
