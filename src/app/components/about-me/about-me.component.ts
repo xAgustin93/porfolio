@@ -15,8 +15,8 @@ export class AboutMeComponent {
 
   public imgPerson:string = "assets/img/photo.jpg";
 
-  public description:string = "Mi aspiración es, crear aplicaciones y organizar un equipo a gran escala, me encanta programa Front-end y Back-end ya que me gusta se autodidacta y no quedarme atacando en un campo, nunca se ha aprendido lo suficiente de nada, incluso el mas experto le queda mucho camino que recorrer por eso nunca hay que dejar de aprender, en pocas palabras soy yo un chico normal con ganas de mejorar cada día mas."
-
+  public description:string = "Mi aspiración es crear aplicaciones y organizar un equipo, me encanta programa Front-end y Back-end, soy autodidacta que es como he aprendido ha programar y gracias ha eso cada día aprendo cosas nuevas, nunca se ha aprendido lo suficiente de nada, incluso el mas experto le queda mucho camino que recorrer por eso nunca hay que dejar de aprender, en pocas palabras soy yo un chico normal con ganas de mejorar cada día mas."
+  
   public name:string = "Francisco Agustín";
   public lastname:string = "Navarro Galdon";
   public address:string = "Calle 14 de Abril, 9";
