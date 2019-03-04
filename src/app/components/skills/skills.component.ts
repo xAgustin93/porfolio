@@ -193,7 +193,15 @@ export class SkillsComponent implements OnInit {
     },
     {
       "code": "Symfony 2",
-      "icon": "",
+      "icon": "fab fa-php",
+      style: {
+        "background-color": "#4EB2E0",
+        "width": "15%",
+      }
+    }, 
+    {
+      "code": "Phalcon",
+      "icon": "fab fa-php",
       style: {
         "background-color": "#4EB2E0",
         "width": "15%",
@@ -238,19 +246,11 @@ export class SkillsComponent implements OnInit {
 
   otherSkills: any = [
     {
-      "code": "Adobe Photoshop",
+      "code": "Docker",
       "icon": "",
       style: {
         "background-color": "#28a745",
-        "width": "60%",
-      }
-    },
-    {
-      "code": "Adobe Premiere Pro",
-      "icon": "",
-      style: {
-        "background-color": "#28a745",
-        "width": "60%",
+        "width": "30%",
       }
     },
     {
@@ -267,6 +267,22 @@ export class SkillsComponent implements OnInit {
       style: {
         "background-color": "#28a745",
         "width": "50%",
+      }
+    }, 
+    {
+      "code": "Adobe Photoshop",
+      "icon": "",
+      style: {
+        "background-color": "#28a745",
+        "width": "60%",
+      }
+    },
+    {
+      "code": "Adobe Premiere Pro",
+      "icon": "",
+      style: {
+        "background-color": "#28a745",
+        "width": "60%",
       }
     },
     {
@@ -287,14 +303,6 @@ export class SkillsComponent implements OnInit {
     },
     {
       "code": "Jira",
-      "icon": "",
-      style: {
-        "background-color": "#28a745",
-        "width": "30%",
-      }
-    },
-    {
-      "code": "Docket",
       "icon": "",
       style: {
         "background-color": "#28a745",
